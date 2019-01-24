@@ -4,14 +4,14 @@
 }
 
 body{
-  background-color:#cecece;
+  background-color:tan;
 }
 
 .container{
-  width:80vw;
+  width:70vw;
   height: 100vh;
   margin: auto;
-  background-color: black;
+  background-color: #cecece;
 }
 
 header{
@@ -33,7 +33,7 @@ header > .int_pic{
   border: 5px solid white;
 }
 
-.opaco{
+.layover{
   width: 100%;
   height: 100%;
   background-color: rgba(23, 211, 214 , 0.3);
@@ -41,7 +41,7 @@ header > .int_pic{
   position: relative;
 }
 
-.opaco > h1{
+.layover > h1{
   position: absolute;
   top: 50%;
   left:50%;
@@ -74,4 +74,42 @@ header > .int_pic{
 .nav_item{
   float:left;
   color:white;
+  padding: 5PX;
+  border-right: 1px solid white;
+}
+
+.nav_item:hover {
+  background-color: rgba(90,50,50,0.5);
+}
+
+#special_item{
+  border: none;
+}
+
+main{
+  padding: 20px;
+}
+
+.corpo{
+  float: left;
+}
+
+.bot_container::after{
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.left_sec{
+  background-color: green;
+  width: 30%;
+}
+
+.mid_sec{
+  background-color: green;
+  width: 40%;
+}
+.left_sec{
+  background-color: green;
+  width: 30%;
 }
