@@ -11,7 +11,6 @@ body{
   width:70vw;
   height: 100vh;
   margin: auto;
-  background-color: #cecece;
 }
 
 header{
@@ -87,11 +86,16 @@ header > .int_pic{
 }
 
 main{
+  width: 100%;
   padding: 20px;
+  text-align: center;
 }
 
 .corpo{
   float: left;
+  margin: 0.5%;
+  background-color: white;
+  border-radius: 3px;
 }
 
 .bot_container::after{
@@ -100,16 +104,20 @@ main{
   display: table;
 }
 
-.left_sec{
-  background-color: green;
+#left_sec{
+  width: 30%;
+  text-align: center;
+}
+
+#mid_sec{
+  width: 37%;
+}
+#right_sec{
   width: 30%;
 }
 
-.mid_sec{
-  background-color: green;
-  width: 40%;
-}
-.left_sec{
-  background-color: green;
-  width: 30%;
+.corpo > img{
+  width: 98%;
+  padding: 5px;
+  border-radius: 2px;
 }
