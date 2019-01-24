@@ -1,0 +1,77 @@
+*{
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+body{
+  background-color:#cecece;
+}
+
+.container{
+  width:80vw;
+  height: 100vh;
+  margin: auto;
+  background-color: black;
+}
+
+header{
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.int_pic{
+  width: 100%;
+  height: 250px;
+}
+
+header > .int_pic{
+  width: 100%;
+  background-image: url("img/fogpic.jpeg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 3px;
+  border: 5px solid white;
+}
+
+.opaco{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(23, 211, 214 , 0.3);
+  border-radius: 3px;
+  position: relative;
+}
+
+.opaco > h1{
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50% , -50%);
+  color: navy;
+  border: 3px groove navy;
+  padding: 3px;
+}
+
+.menu_section{
+  background-color: brown;
+  height: 50px;
+  width: 100%;
+  position: relative;
+}
+
+.main_menu{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+}
+
+.main_menu::after{
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.nav_item{
+  float:left;
+  color:white;
+}
